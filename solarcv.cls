@@ -76,20 +76,33 @@
 \definecolor{blue}{HTML}{6CE0F1}
 
 \ifdefined\@cv@print
-  \colorlet{green}{solarized-base01}
-  \colorlet{orange}{solarized-base01}
-  \colorlet{purple}{solarized-base01}
-  \colorlet{brown}{gray}
-  \colorlet{red}{solarized-base01}
-  \colorlet{blue}{solarized-base01}
-  \colorlet{fillheader}{solarized-base1}
-  \colorlet{header}{solarized-base01}
+    \colorlet{green}{solarized-base01}
+    \colorlet{orange}{solarized-base01}
+    \colorlet{purple}{solarized-base01}
+    \colorlet{yellow}{solarized-base01}
+    \colorlet{red}{solarized-base01}
+    \colorlet{blue}{solarized-base01}
+    \colorlet{purple}{solarized-base01}
+    \colorlet{fillheader}{white}
+    \colorlet{header}{solarized-base02}
+    \colorlet{gray}{solarized-base02}
+    \colorlet{darkgray}{solarized-base03}
+    \colorlet{lightgray}{solarized-base01}
 \else
-  \colorlet{fillheader}{solarized-base1}
-  \colorlet{header}{solarized-base03}
+    \colorlet{darkgray}{solarized-base02}
+    \colorlet{gray}{solarized-base00}
+    \colorlet{lightgray}{solarized-base1}
+    \colorlet{green}{solarized-green}
+    \colorlet{orange}{solarized-orange}
+    \colorlet{yellow}{solarized-yellow}
+    \colorlet{purple}{solarized-magenta}
+    \colorlet{red}{solarized-red}
+    \colorlet{blue}{solarized-blue}
+    \colorlet{fillheader}{darkgray}
+    \colorlet{header}{white}
 \fi
-\colorlet{textcolor}{solarized-base02}
-\colorlet{headercolor}{solarized-base03}
+\colorlet{textcolor}{darkgray}
+\colorlet{headercolor}{gray}
 
 %%%%%%%%%
 % Fonts %
@@ -111,7 +124,7 @@
 % PAGE %
 %%%%%%%%%%
 
-\pagecolor{solarized-base3}
+\pagecolor{white}
 \ifdefined\@cv@print
   \pagecolor{white}
 \fi
@@ -126,7 +139,7 @@
 \newcommand{\rolefont}{%
   \fontsize{14pt}{24pt}\selectfont%
   \thinfont%
-  \color{solarized-base00}%
+  \color{white}%
 }
 
 \newcommand{\header}[3]{%
@@ -156,12 +169,12 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        solarized-blue\or%
-        solarized-red\or%
-        solarized-orange\or%
-        solarized-green\or%
-        solarized-magenta\or%
-        solarized-yellow\else%
+        blue\or%
+        red\or%
+        orange\or%
+        green\or%
+        purple\or%
+        yellow\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -197,7 +210,7 @@
     topsep=0pt,              % space before start / after end of list
     leftmargin=*,            %
     nolistsep,               % space between items
-    font={\bfseries\color{solarized-base01}}, % set the label font
+    font={\bfseries\color{gray}}, % set the label font
       %  font={\bfseries\sffamily\color{red}}, % if colour is needed
 }
 
@@ -214,7 +227,7 @@
   \parbox[t]{11.8cm}{%
     \textbf{\color{solarized-base03}#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=solarized-base00} #3}
+    {\footnotesize\addfontfeature{Color=lightgray} #3}
   }
   \begin{adjustwidth}{0.5cm}{0.5cm}
     \small #4
@@ -251,7 +264,7 @@
 
 \RequirePackage{fancyhdr}
 
-\renewcommand{\footrule}{{\color{solarized-blue}%
+\renewcommand{\footrule}{{\color{blue}%
 \vskip-\footruleskip\vskip-\footrulewidth
 \hrule width\headwidth height\footrulewidth\vskip\footruleskip}}
 \pagestyle{fancy}
@@ -280,7 +293,7 @@
   \par%
   \newblock%
   {%
-    \footnotesize\addfontfeature{Color=solarized-base0}\itshape%
+    \footnotesize\addfontfeature{Color=lightgray}\itshape%
     \usebibmacro{journal+issuetitle}%
     \setunit{\space}%
     \printfield{pages}%
@@ -300,7 +313,7 @@
   \par%
   \newblock%
   {%
-    \footnotesize\addfontfeature{Color=solarized-base0}%
+    \footnotesize\addfontfeature{Color=lightgray}%
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
@@ -318,7 +331,7 @@
   \par%
   \newblock%
   {%
-    \footnotesize\addfontfeature{Color=solarized-base0}\itshape%
+    \footnotesize\addfontfeature{Color=lightgray}\itshape%
     \printfield{booktitle}%
     \setunit*{\addcomma\space}%
     \printfield{note}%
@@ -338,7 +351,7 @@
   \par%
   \newblock%
   {%
-    \footnotesize\addfontfeature{Color=solarized-base0}\itshape%
+    \footnotesize\addfontfeature{Color=lightgray}\itshape%
     \printfield{type}%
     \setunit{\space}%
     \printfield{number}%
@@ -350,7 +363,7 @@
 }
 
 \DeclareNameFormat{author}{%
-  \small\addfontfeature{Color=solarized-base0}%
+  \small\addfontfeature{Color=lightgray}%
   \ifblank{#3}{}{#3\space}#1%
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
