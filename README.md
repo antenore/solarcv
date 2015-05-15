@@ -5,6 +5,9 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xcolor-solarized)
 
+![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)
+
+
 ## Features
 
    * Most of the Friggeri features
@@ -37,8 +40,9 @@ Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xc
 
 ## How to use
 
+   * Modify the cv-config.tex file with your personal details.
    * Modify solarcv.cls and set your favorite fonts, you will need a Math font for LaTeX symbols.
-   * Install all the TeX packages are required (see the cls files for a list).
+   * Install all the TeX packages that are required (see the cls files for a list).
    * Modify the SolarCV.tex file and adapt to your paper size
    * Modify each file under tex directory and substitue each '\blind\*' text to
      your needs.

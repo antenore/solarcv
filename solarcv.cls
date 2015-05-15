@@ -30,8 +30,8 @@
 % Dummy text generator %
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[english]{babel}
-\usepackage{blindtext}
+\RequirePackage[english]{babel}
+\RequirePackage{blindtext}
 
 %%%%%%%%%%%%%%%%%%%%
 % Global Variables %
