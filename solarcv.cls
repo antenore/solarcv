@@ -255,9 +255,9 @@
 \vskip-\footruleskip\vskip-\footrulewidth
 \hrule width\headwidth height\footrulewidth\vskip\footruleskip}}
 \pagestyle{fancy}
-\fancyfoot[LE,LO]{Copyright \textcopyright\ \firstname\ \lastname\ \the\year}
-\fancyfoot[CE,CO]{}
-\fancyfoot[RE,RO]{built with \LaTeX}
+\fancyfoot[LE,LO]{\lastname\textcopyright\ \the\year}
+\fancyfoot[CE,CO]{built with \LaTeX}
+\fancyfoot[RE,RO]{Fork me on \href{http://github.com/antenore/solarcv}{GitHub}}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
