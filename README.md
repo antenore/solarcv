@@ -14,15 +14,16 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 ## How to use
 
+   * Modify the cv-config.tex file with your personal details.
    * Modify solarcv.cls and set your favorite fonts, you will need a Math font for LaTeX symbols.
-   * Install all the TeX packages are required (see the cls files for a list).
+   * Install all the TeX packages that are required (see the cls files for a list).
    * Modify the SolarCV.tex file and adapt to your paper size
    * Modify each file under tex directory and substitue each '\blind\*' text to
      your needs.
    * Put a photo of yourself under img (FirstnameLastname.png)
    * Build it -->
 
-   ```tex
+   ```bash
    make clean
    make
    make display
