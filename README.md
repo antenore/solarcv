@@ -57,5 +57,5 @@ Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xc
 
 ## License
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
