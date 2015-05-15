@@ -5,8 +5,8 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xcolor-solarized)
 
-![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)
-
+![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)  
+![SolarCV Black&White](https://github.com/antenore/solarcv/blob/master/img/Screenshot_BlackAndWhite.png)
 
 ## Features
 
