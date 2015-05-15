@@ -3,6 +3,8 @@
 CV template, written in LaTeX, based on [Adrien Friggeri CV](https://github.com/afriggeri/cv),
 slighty modified to use [Ethan Schoonover Solarized color palette](https://github.com/altercation/solarized).
 
+![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)  
+
 ## Features
 
    * Most of the Friggeri features
@@ -28,5 +30,5 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 ## License
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)][0]
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][0].
+[![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)]    
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).  
