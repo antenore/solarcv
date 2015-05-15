@@ -3,12 +3,37 @@
 CV template, written in LaTeX, based on [Adrien Friggeri CV](https://github.com/afriggeri/cv),
 slighty modified to use [Ethan Schoonover Solarized color palette](https://github.com/altercation/solarized).
 
+Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xcolor-solarized)
+
 ## Features
 
    * Most of the Friggeri features
    * Portrait picture
    * Solarized color palette
    * PDF metadata (with my copyright, can be modified as per CC BY-SA 3.0)
+
+## Requirements
+
+   *LaTeX packages*
+
+   * babel
+   * biblatex
+   * blindtext
+   * enumitem
+   * changepage
+   * fancyhdr
+   * fontspec
+   * geometry
+   * graphicx
+   * hyperref
+   * hyperxmp
+   * longtable
+   * parskip
+   * tabu
+   * textpos
+   * tikz
+   * unicode-math
+   * [xcolor-solarized](https://github.com/Jubobs/xcolor-solarized)
 
 ## How to use
 
@@ -20,7 +45,7 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
    * Put a photo of yourself under img (FirstnameLastname.png)
    * Build it -->
 
-   ```tex
+   ```bash
    make clean
    make
    make display
@@ -28,5 +53,5 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 ## License
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)][0]
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][0].
+[![Creative Commons License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
