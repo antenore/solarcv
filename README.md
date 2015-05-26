@@ -5,7 +5,7 @@ slighty modified to use [Ethan Schoonover Solarized color palette](https://githu
 
 Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xcolor-solarized)
 
-![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)  
+![SolarCV screenshot](https://github.com/antenore/solarcv/blob/master/img/Screenshot_2015-05-15_17-43-33.png)
 ![SolarCV Black&White](https://github.com/antenore/solarcv/blob/master/img/Screenshot_BlackAndWhite.png)
 
 ## Features
@@ -53,6 +53,13 @@ Solarized is provided by @Jubobs [xcolor-solarized](https://github.com/Jubobs/xc
    make clean
    make
    make display
+   ```
+
+   By default make will compile a black&white version of yoour CV, you can build
+   the color version with:
+
+   ```bash
+   make clean ; make IS_COLOR=1 && make display
    ```
 
 ## License

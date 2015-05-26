@@ -15,6 +15,12 @@
 
 PROJECT = SolarCV
 
+ifdef IS_COLOR
+	COMMANDS = "\def\iscolor{1} \input{$(PROJECT).tex}"
+else
+	COMMANDS = $(PROJECT)
+endif
+
 default: obj/$(PROJECT).pdf
 
 display: default
@@ -79,11 +85,11 @@ obj/:
 	mkdir -p obj/
 
 obj/$(PROJECT).aux: $(TEX_FILES) $(IMG_FILES) | obj/
-	xelatex $(PDFLATEX_FLAGS) $(PROJECT)
+	xelatex $(PDFLATEX_FLAGS) $(COMMANDS)
 
 obj/$(PROJECT).bbl: $(BIB_FILES) | obj/$(PROJECT).aux
 	bibtex obj/$(PROJECT)
-	xelatex $(PDFLATEX_FLAGS) $(PROJECT)
+	xelatex $(PDFLATEX_FLAGS) $(COMMANDS)
 
 obj/$(PROJECT).pdf: obj/$(PROJECT).aux $(if $(BIB_FILES), obj/$(PROJECT).bbl)
-	xelatex $(PDFLATEX_FLAGS) $(PROJECT)
+	xelatex $(PDFLATEX_FLAGS) $(COMMANDS)

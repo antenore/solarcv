@@ -1,6 +1,9 @@
 %!TEX TS-program = xelatex
-%\documentclass[a4paper]{solarcv}
-\documentclass[print,a4paper]{solarcv}
+\ifdefined\iscolor
+    \documentclass[a4paper]{solarcv}
+\else
+    \documentclass[a4paper,print]{solarcv}
+\fi
 \begin{document}
 %%%%%%%%%%
 % CONFIG %
