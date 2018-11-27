@@ -17,7 +17,6 @@
 \hypersetup{%
     pdftitle={SolarCV},
     pdfauthor={Antenore Gatta},
-    pdfdate={2015-05-15},
     pdfcopyright={Copyright (C) 2015, Antenore Gatta},
     pdfsubject={pdf CV generated with LaTeX},
     pdfkeywords={cv, resume, solarized},
@@ -109,16 +108,22 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+%\RequirePackage[math-style=TeX]{unicode-math}
+%\usepackage[T1]{fontenc}
+\usepackage{stix}
+\usepackage{csquotes}
 
 \newfontfamily\bodyfont[]{Source Code Pro}
 \newfontfamily\thinfont[]{Source Code Pro ExtraLight}
 \newfontfamily\headingfont[]{Source Code Pro Bold}
+%\newfontfamily\bodyfont[]{Raleway Medium}
+%\newfontfamily\thinfont[]{Raleway Light}
+%\newfontfamily\headingfont[]{Raleway Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Source Code Pro Light}
 
-\setmathfont{STIX Math}
+%\setmathfont{STIX Math}
 
 %%%%%%%%%%
 % PAGE %
@@ -225,9 +230,9 @@
   }
   \hfill
   \parbox[t]{11.8cm}{%
-    \textbf{\color{solarized-base03}#2}%
+    \textbf{\color{lightgray}#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}
+    {\footnotesize\addfontfeature{Color=solarized-base03} #3}
   }
   \begin{adjustwidth}{0.5cm}{0.5cm}
     \small #4
@@ -364,7 +369,7 @@
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
+  \nameparts{#1}\ifblank{\namepartgiven}{}{\namepartgiven\space}\namepartfamily
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
     {}%
@@ -377,7 +382,7 @@
   \end{refsection}
 }
 
-\DeclareSortingScheme{chronological}{
+\DeclareSortingTemplate{chronological}{
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
